@@ -1,2 +1,2 @@
-add_lunch_combo cm_cocktail-eng
+add_lunch_combo cm_cocktail-userdebug
 

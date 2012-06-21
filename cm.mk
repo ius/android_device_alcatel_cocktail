@@ -6,8 +6,9 @@ PRODUCT_RELEASE_NAME := cocktail
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/alcatel/cocktail/device_cocktail.mk)
+$(call inherit-product, device/tct/cocktail/device_cocktail.mk)
 
+# Spoof stock gingerbread fingerprint for now
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=one_touch_995_ALNL \
                                 BUILD_FINGERPRINT=TCT/one_touch_995_ALNL/one_touch_995_gsm:2.3.6/GINGERBREAD/v60J-0:user/release-keys \
                                 PRIVATE_BUILD_DESC="one_touch_995_ALNL-user 2.3.6 GINGERBREAD v60J-0 release-keys"
@@ -15,5 +16,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=one_touch_995_ALNL \
 PRODUCT_DEVICE := cocktail
 PRODUCT_NAME := cm_cocktail
 PRODUCT_MODEL := ALCATEL_one_touch_995
-PRODUCT_MANUFACTURER := alcatel
+PRODUCT_MANUFACTURER := TCT
 
