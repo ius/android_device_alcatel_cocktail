@@ -1,0 +1,30 @@
+# KGSL
+/dev/kgsl-2d0             0666   root       root
+/dev/kgsl-3d0             0666   root       root
+/dev/genlock              0666   root       root
+
+# sensors
+/dev/mpu                  0660   compass    system
+/dev/mpuirq               0660   compass    system
+/dev/accelirq             0660   compass    system
+/dev/timerirq             0660   compass    system
+/dev/akm8975_aot          0660   compass    system
+/dev/tmd2771x             0660   compass    system
+
+# radio
+/dev/smd*                 0640   radio      radio
+/dev/diag                 0640   radio      radio
+
+# bluetooth
+/dev/ttyHS0               0600   bluetooth  bluetooth
+
+# video accel
+/dev/msm_vidc_dec         0660   system     audio
+/dev/msm_vidc_dec_sec     0660   system     audio
+/dev/msm_vidc_enc         0660   system     audio
+/dev/msm_vidc_ref         0660   system     audio
+
+# misc msm devices
+/dev/msm_rotator          0660   system     graphics
+/dev/graphics/*           0660   system     graphics
+
