@@ -26,7 +26,10 @@ BOARD_FLASH_BLOCK_SIZE := 1
 # Partition sizes
 #
 BOARD_BOOTIMAGE_PARTITION_SIZE := 5242880
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 5242880
+
+# XXX - this has an extra zero appended to be able to build recovery
+# We can only fit the kernel if it's stripped down and LZMA-compressed..
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 52428800
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 262144000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 1064304640
 
