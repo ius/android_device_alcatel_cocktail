@@ -63,6 +63,10 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 BOARD_VOLD_MAX_PARTITIONS := 8
 
+# To avoid a crash in liboemcamera.so
+# when the front camera is opened
+TARGET_DISABLE_ARM_PIE := true
+
 #
 # Qualcomm stuff
 #
