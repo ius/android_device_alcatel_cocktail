@@ -23,9 +23,10 @@ PRODUCT_COPY_FILES += \
     device/alcatel/cocktail/ft5306_ts.kcm:system/usr/keychars/ft5306_ts.kcm \
     device/alcatel/cocktail/ft5306_ts.kl:system/usr/keylayout/ft5306_ts.kl \
 
-# Media codecs
+# Media codecs & audio policy
 PRODUCT_COPY_FILES += \
-    device/alcatel/cocktail/media_codecs.xml:system/etc/media_codecs.xml
+    device/alcatel/cocktail/media_codecs.xml:system/etc/media_codecs.xml \
+    device/alcatel/cocktail/audio_policy.conf:system/etc/audio_policy.conf
 
 # Use HDPI phone dalvik config
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
@@ -69,7 +70,6 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm7x30 \
     audio.primary.msm7x30 \
     audio_policy.msm7x30 \
-    audio_policy.conf \
     libgenlock \
     libtilerenderer \
     libinvensense_hal \
