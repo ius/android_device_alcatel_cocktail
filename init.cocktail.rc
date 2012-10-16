@@ -60,6 +60,13 @@ service iprenew_p2p /system/bin/dhcpcd -n p2p
     disabled
     oneshot
 
+service hciattach /system/bin/brcm_patchram_plus --enable_hci --no2bytes --tosleep 50000 --baudrate 3000000 --use_baudrate_for_download --patchram /system/etc/firmware/bcm4330.hcd /dev/ttyHS0
+    class main
+    user bluetooth
+    group qcom_oncrpc bluetooth net_bt_admin
+    disabled
+    oneshot
+
 service qmiproxy /system/bin/qmiproxy
     class main
     user radio

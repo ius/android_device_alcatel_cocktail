@@ -88,13 +88,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=131072 \
     wifi.interface=wlan0
 
-# Radio properties
+# System properties
 PRODUCT_PROPERTY_OVERRIDES += \
     rild.libpath=/system/lib/libril-qc-qmi-1.so \
     rild.libargs=-d/dev/smd0 \
     ro.ril.hsxpa=1 \
     ro.ril.gprsclass=10 \
-    ro.telephony.ril_class=QualcommSharedRIL
+    ro.telephony.ril_class=QualcommSharedRIL \
+    ro.bt.bdaddr_path=/system/etc/bluetooth/bdaddr.txt \
 
 $(call inherit-product, build/target/product/full.mk)
 

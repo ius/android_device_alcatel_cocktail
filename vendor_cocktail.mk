@@ -9,8 +9,9 @@ PRODUCT_COPY_FILES += \
     device/alcatel/cocktail/proprietary/fw_bcmdhd_p2p.bin:/system/etc/firmware/fw_bcmdhd_p2p.bin \
     device/alcatel/cocktail/bcmdhd.cal:/system/etc/wifi/bcmdhd.cal
 
-# bcm4330 bt fw?
-#    device/alcatel/cocktail/proprietary/bcm4330.hcd:/system/etc/firmware/bcm4330.hcd
+# bcm4330 bt fw
+PRODUCT_COPY_FILES += \
+    device/alcatel/cocktail/proprietary/BCM4330B1_002.001.003.0087.0000_TCL_Cocktail_TESTONLY.hcd:/system/etc/firmware/bcm4330.hcd
 
 # video codecs
 PRODUCT_COPY_FILES += \
