@@ -6,7 +6,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Proprietary bits and pieces
 $(call inherit-product-if-exists, device/alcatel/cocktail/vendor_cocktail.mk)
 
-#DEVICE_PACKAGE_OVERLAYS += device/alcatel/cocktail/overlay
+DEVICE_PACKAGE_OVERLAYS += device/alcatel/cocktail/overlay
 
 # init.rc and ueventd.rc
 PRODUCT_COPY_FILES += \
