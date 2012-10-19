@@ -84,6 +84,9 @@ PRODUCT_PACKAGES += \
     libmm-omxcore \
     libdivxdrmdecrypt
 
+# Ship Torch
+PRODUCT_PACKAGES += Torch
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240 \
     ro.opengles.version=131072 \

@@ -22,6 +22,9 @@ on emmc-fs
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/state
     chown bluetooth bluetooth /sys/class/rfkill/rfkill0/type
 
+    # torch
+    chown camera camera /sys/class/leds/SGM3140_torch_flash/mode
+
     # qmux stuff
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
