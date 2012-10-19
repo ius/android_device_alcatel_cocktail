@@ -7,6 +7,9 @@ on early-init
     # for backwards compatibility
     symlink /mnt/sdcard /sdcard
 
+on boot
+    mount debugfs /sys/kernel/debug /sys/kernel/debug
+
 on emmc-fs
     wait /dev/block/mmcblk0
     mount ext4 /dev/block/mmcblk0p14 /system nodev barrier=1
