@@ -11,6 +11,7 @@ DEVICE_PACKAGE_OVERLAYS += device/alcatel/cocktail/overlay
 # init.rc and ueventd.rc
 PRODUCT_COPY_FILES += \
     device/alcatel/cocktail/init.cocktail.rc:root/init.cocktail.rc \
+    device/alcatel/cocktail/init.cocktail.usb.rc:root/init.cocktail.usb.rc \
     device/alcatel/cocktail/ueventd.cocktail.rc:root/ueventd.cocktail.rc
 
 # vold
@@ -96,6 +97,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.gprsclass=10 \
     ro.telephony.ril_class=QualcommSharedRIL \
     ro.bt.bdaddr_path=/system/etc/bluetooth/bdaddr.txt \
+    persist.sys.usb.config=mass_storage \
 
 $(call inherit-product, build/target/product/full.mk)
 
