@@ -89,3 +89,9 @@ service qmuxd /system/bin/qmuxd
 service netmgrd /system/bin/netmgrd
     class main
 
+service cnd /system/bin/cnd
+    class main
+    socket cnd stream 0660 radio radio
+    user radio
+    group radio
+

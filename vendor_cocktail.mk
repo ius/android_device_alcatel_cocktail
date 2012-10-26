@@ -72,4 +72,8 @@ PRODUCT_COPY_FILES += \
     device/alcatel/cocktail/proprietary/libdsutils.so:/system/lib/libdsutils.so \
     device/alcatel/cocktail/proprietary/qmuxd:/system/bin/qmuxd \
     device/alcatel/cocktail/proprietary/qmiproxy:/system/bin/qmiproxy \
-    device/alcatel/cocktail/proprietary/netmgrd:/system/bin/netmgrd
+    device/alcatel/cocktail/proprietary/netmgrd:/system/bin/netmgrd \
+    device/alcatel/cocktail/proprietary/cnd:/system/bin/cnd \
+    device/alcatel/cocktail/proprietary/libxml.so:/system/lib/libxml.so \
+    device/alcatel/cocktail/proprietary/libcneutils.so:/system/lib/libcneutils.so \
+    device/alcatel/cocktail/proprietary/libcneqmiutils.so:/system/lib/libcneqmiutils.so
